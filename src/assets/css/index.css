@@ -1,0 +1,251 @@
+/*顶部栏*/
+.topWrap {
+  width: calc(100% - 210px);
+  height: 48px;
+  margin-left: 210px;
+  box-sizing: border-box;
+  transition: all .2s;
+}
+
+.fullTopWrap {
+  width: calc(100% - 64px);
+  margin-left: 64px;
+  height: 48px;
+  box-sizing: border-box;
+  transition: all .2s;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+}
+
+.userName {
+  color: #333;
+  padding-right: 0.24rem;
+  font-size: 0.14rem;
+  line-height: 0.14rem;
+  font-weight: 400;
+}
+
+.fixed-left {
+  /* width: 216px; */
+  height: calc(100vh - 280px);
+  overflow-y: auto;
+}
+
+.el-menu::-webkit-scrollbar {
+  width: 0px;
+}
+
+.fixed-left li {
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.fixed-left li img {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.left {
+  width: 210px;
+  height: 100vh;
+  display: block;
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  float: left;
+  transition: all .2s;
+  background-color: #FFFFFF;
+  box-shadow: 2px 0px 6px 0px rgba(0, 21, 41, 0.12);
+}
+
+.switch_box {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  text-align: left;
+  background-color: white;
+  border-top: 1px solid #EBEBEB;
+}
+
+.switch_box img {
+  margin-top: 13px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.left_pro {
+  width: 64px;
+  overflow: hidden;
+  transition: all .2s;
+}
+
+.left .logo_nav {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 92px;
+  /* height: 82px; */
+}
+
+.logo_nav_nimi {
+  width: 40px;
+  margin-top: 60px;
+}
+
+.btn-close-menu {
+  height: 0.32rem;
+  width: 0.32rem;
+  margin-left: 1.4rem;
+  margin-top: 0.2rem;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+/*菜单显示/隐藏 动画*/
+.left-enter-active,
+.left-leave-active {
+  transition: width 0.2s;
+}
+
+.left-enter,
+.left-leave-to {
+  width: 0px;
+}
+
+/*主容器*/
+.middleWrap {
+  width: 100%;
+  height: (100vh - 48px);
+  margin-top: -48px;
+  overflow: hidden;
+  display: flex;
+}
+
+/*右侧布局*/
+.right {
+  height: calc(100vh - 48px);
+  width: calc(100% - 210px);
+  margin-top: 48px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all .2s;
+  background-color: #F6F6F6;
+}
+
+.rightFull {
+  height: calc(100vh - 48px);
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: 48px;
+  transition: all .2s;
+}
+
+.routerView {
+  height: 100%;
+  background-color: white;
+  padding: 15px;
+}
+
+/* 头部样式 */
+.header_top {
+  overflow: hidden;
+  height: 48px;
+  background-color: #FFFFFF;
+  position: relative;
+  box-shadow: 0px 1px 4px 0px rgba(0, 21, 41, 0.12);
+}
+
+.user {
+  float: right;
+  height: 48px;
+  line-height: 48px;
+  margin-right: 0.2rem;
+  color: #5F5F5F;
+  display: flex;
+}
+
+.user>div {
+  display: flex;
+  align-items: center;
+}
+
+.user>div>span {
+  cursor: pointer;
+}
+
+.user>div>span:hover {
+  text-decoration: underline;
+}
+
+.user img {
+  width: 12px;
+  height: 12px;
+}
+
+.user .pwd-box {
+  padding: 0 30px;
+  position: relative;
+}
+
+.user .pwd-box::before {
+  content: '';
+  position: absolute;
+  top: 19px;
+  left: 15px;
+  width: 1px;
+  height: 10px;
+  background-color: #5F5F5F;
+}
+
+.user .pwd-box::after {
+  content: '';
+  position: absolute;
+  top: 19px;
+  right: 15px;
+  width: 1px;
+  height: 10px;
+  background-color: #5F5F5F;
+}
+
+.user .pwd-box img {
+  margin-right: 5px;
+}
+
+.user>span {
+  max-width: 145px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fixed-left li {
+  text-align: left;
+}
+
+.select-ft {
+  float: right;
+  margin-right: 20px;
+  padding-top: 9px;
+}
+
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+  width: 100px;
+}

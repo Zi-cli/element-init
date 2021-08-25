@@ -1,0 +1,461 @@
+@import "~@/assets/css/default.less";
+.login_wrap {
+  height: 100vh;
+  position: relative;
+  background: url(../images/new/login_bg.png) no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.user_title{
+  margin-left: 6%;
+  padding-top: 45px;
+  img{
+    width: 132px;
+  }
+}
+.user_login {
+  position: absolute;
+  right: 8%;
+  top: 15%;
+  text-align: center;
+  width: 500px;
+  height: 660px;
+  padding-top: 30px;
+  border-radius: 10px;
+  border-top: 10px solid #749E25;
+  background:rgba(255,255,255,1);
+}
+.user_login>img {
+  margin-bottom: 20px;
+  width:112px;
+}
+.user_login input{
+  font-size: 18px;
+  padding-left: 40px;
+}
+.loginTitle{
+  font-size:28px;
+  font-family:SourceHanSansSC-Medium,SourceHanSansSC;
+  font-weight:600;
+  color:rgba(36,45,65,1);
+  margin-bottom: 5px;
+}
+.input_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 18px 0 5px 0;
+}
+.password_class {
+  margin: 15px 0;
+  background: url(../images/new/passWord.png) no-repeat 10px 10px;
+  background-size: 25px 25px;
+  padding-right: 55px;
+}
+.password_img {
+  cursor: pointer;
+  position: absolute;
+  width: 25px;
+  right: 60px;
+  bottom: 244px;
+}
+.input_container input {
+  outline: none;
+  border: 1px solid rgba(217,224,231,1);
+  width: 430px;
+  height: 50px;
+}
+.inputName{
+  background: url(../images/new/userName.png) no-repeat 10px 10px;
+  background-size: 25px 25px;
+}
+.code_box{
+  width: 430px;
+  display: flex;
+  img{
+    width: 160px;
+  }
+}
+.input_code{
+  width: 260px;
+  background: url(../images/new/code.png) no-repeat 10px 12px;
+  background-size: 25px 25px;
+}
+.login_button_container {
+  margin-top: 10px;
+}
+.login_button_container button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  width: 430px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0;
+  background:#749E25;
+  color: #fff;
+  font-size: 18px;
+}
+.login_button_container button:hover{
+  background-color: rgba(116,158,37, 0.9) !important;
+}
+.login_button_container button:focus {
+  background-color:rgba(116,158,37, 0.8) !important;
+}
+.login_button_container button:active {
+  background-color:rgba(116,158,37, 0.5) !important;
+}
+.codeImg {
+  height: 50px;
+  margin-left: 10px;
+  border: 1px solid #D9D9D9;
+  cursor: pointer;
+}
+.el-button.is-loading:before{
+  position: static;
+}
+.user_login .el-checkbox{
+  padding: 10px 0;
+}
+.user_login .el-checkbox__input.is-checked+.el-checkbox__label{
+  color: #749E25;
+}
+.user_login .el-checkbox__label{
+  font-size: 16px;
+}
+.user_login .el-checkbox__input.is-checked .el-checkbox__inner{
+  background-color: #749E25;
+  border-color: #749E25;
+}
+.user_login .el-checkbox__input.is-focus .el-checkbox__inner{
+  border-color: #749E25;
+}
+.user_login .el-checkbox__inner{
+  width: 16px;
+  height: 16px;
+}
+.edit_box{
+  width: 430px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+.a-text{
+  color: #1890FF;
+  font-size: 13px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1700px) {
+  .user_login {
+    position: absolute;
+    right: 8%;
+    top: 15%;
+    text-align: center;
+    width: 438px;
+    height: 580px;
+    padding-top: 23px;
+    background:rgba(255,255,255,1);
+  }
+  .user_login>img {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    width:105px;
+  }
+  .user_title{
+    img{
+      width: 105px;
+    }
+  }
+  .loginTitle{
+    font-size:22px;
+    font-family:SourceHanSansSC-Medium,SourceHanSansSC;
+    font-weight:600;
+    color:rgba(36,45,65,1);
+    margin-bottom: 5px;
+  }
+  .password_img {
+    cursor: pointer;
+    position: absolute;
+    width: 17px;
+    right: 60px;
+    bottom: 223px;
+  }
+  .login_button_container {
+    margin-top: 10px;
+  }
+  .login_button_container button {
+    width: 360px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    background:#749E25;
+    color: #fff;
+    font-size: 15px;
+  }
+  .input_container input {
+    outline: none;
+    border: 1px solid rgba(217,224,231,1);
+    width: 360px;
+    height: 40px;
+    font-size: 15px;
+  }
+  .code_box{
+    width: 360px;
+    display: flex;
+    img{
+      width: 130px;
+    }
+  }
+  .inputName{
+    background: url(../images/new/userName.png) no-repeat 10px 8px;
+    background-size: 22px 22px;
+  }
+  .password_class {
+    margin: 15px 0;
+    background: url(../images/new/passWord.png) no-repeat 10px 8px;
+    background-size: 22px 22px;
+  }
+  .input_code{
+    width: 220px;
+    background: url(../images/new/code.png) no-repeat 10px 8px;
+    background-size: 22px 22px;
+  }
+  .edit_box{
+    width: 360px;
+  }
+  .codeImg {
+    height: 40px;
+    margin-left: 10px;
+    border: 1px solid #D9D9D9;
+    cursor: pointer;
+  }
+  .a-text{
+    font-size: 13px;
+  }
+  .user_login .el-checkbox__label{
+    font-size: 15px;
+  }
+  .user_login .el-checkbox__inner{
+    width: 15px;
+    height: 15px;
+  }
+}
+/* 小分辨率的情况 */
+@media screen and (max-width: 1600px) {
+  .user_login {
+    position: absolute;
+    right: 8%;
+    top: 15%;
+    text-align: center;
+    width: 356px;
+    height: 510px;
+    padding-top: 23px;
+    background:rgba(255,255,255,1);
+  }
+  .user_login>img {
+    margin-top: 0;
+    margin-bottom: 15px;
+    width:85px;
+  }
+  .user_title{
+    img{
+      width: 85px;
+    }
+  }
+  .loginTitle{
+    font-size: 18px;
+    font-family:SourceHanSansSC-Medium,SourceHanSansSC;
+    font-weight:600;
+    color:rgba(36,45,65,1);
+    margin-bottom: 5px;
+  }
+  .input_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 14px 0 5px 0;
+    font-size: 14px;
+  }
+  .password_class {
+    margin: 15px 0;
+    background: url(../images/new/passWord.png) no-repeat 5px 8px;
+    background-size: 25px 25px;
+  }
+  .password_img {
+    cursor: pointer;
+    position: absolute;
+    width: 16px;
+    right: 45px;
+    bottom: 201px;
+  }
+  .input_container input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(217,224,231,1);
+    width: 248px;
+    height: 31px;
+  }
+  .inputName{
+    background: url(../images/new/userName.png) no-repeat 5px 8px;
+    background-size: 25px 25px;
+  }
+  .login_button_container {
+    margin-top: 10px;
+  }
+  .login_button_container button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 310px;
+    height: 34px;
+    line-height: 34px;
+    padding: 0;
+    background:#749E25;
+    color: #fff;
+    font-size: 14px;
+  }
+  .user_login .el-checkbox{
+    padding: 8px 0;
+  }
+
+  .input_container input {
+    outline: none;
+    border: 1px solid rgba(217,224,231,1);
+    width: 310px;
+    height: 36px;
+    font-size: 14px;
+  }
+  .code_box{
+    width: 310px;
+    display: flex;
+    img{
+      width: 100px;
+    }
+  }
+  .inputName{
+    background: url(../images/new/userName.png) no-repeat 10px 7px;
+    background-size: 20px 20px;
+  }
+  .password_class {
+    margin: 15px 0;
+    background: url(../images/new/passWord.png) no-repeat 10px 7px;
+    background-size: 20px 20px;
+  }
+  .input_code{
+    width: 200px;
+    background: url(../images/new/code.png) no-repeat 10px 7px;
+    background-size: 20px 20px;
+  }
+  .edit_box{
+    width: 310px;
+  }
+  .codeImg {
+    height: 36px;
+    margin-left: 10px;
+    border: 1px solid #D9D9D9;
+    cursor: pointer;
+  }
+  .a-text{
+    font-size: 13px;
+  }
+  .user_login .el-checkbox__label{
+    font-size: 14px;
+  }
+  .user_login .el-checkbox__inner{
+    width: 14px;
+    height: 14px;
+  }
+}
+
+// 弹窗样式
+.login_wrap{
+  .el-dialog{
+    margin:0px !important;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .el-dialog__header{
+    text-align: center;
+    border-bottom: 1px solid #d9e0e7;
+  }
+  .el-dialog__body{
+    padding: 20px;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  .title-top{
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .polo-box{
+    width: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &>div{
+      text-align: center;
+    }
+    img{
+      width: 150px;
+      cursor: pointer;
+    }
+  }
+  .info-title{
+    font-size: 16px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #d9e0e7;
+  }
+  .avatar-uploader .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  .avatar-uploader .el-upload:hover {
+    border-color: #409EFF;
+  }
+  .avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 178px;
+    height: 178px;
+    line-height: 178px;
+    text-align: center;
+  }
+  .avatar {
+    width: 178px;
+    height: 178px;
+    display: block;
+  }
+  .txt-line{
+    width: 310px;
+    margin: auto;
+    margin-top: 5px;
+    font-size: 13px !important;
+  }
+  .upload-content{
+    position: relative;
+  }
+  .txt-tip{
+    width: 130px;
+    position: absolute;
+    right: -100px;
+    top: 50px;
+    line-height: 1.5;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .user_login{
+    top: 6%;
+  }
+}

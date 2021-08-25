@@ -1,0 +1,232 @@
+/** 常用色值 **/
+@colorA: #ffffff;
+@colorB: #0099FF;
+@colorC: #29304A;
+@colorD: #F7B500;
+
+/** 常用字体大小 **/
+@fontA: 14px;
+@fontB: 16px;
+@fontC: 20px;
+@fontD: 24px;
+
+
+/** 小手鼠标 **/
+.pointer{
+  cursor: pointer;
+}
+
+.txt-center{
+  text-align: center;
+}
+.txt-right{
+  text-align: right;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clear{
+  clear: both;
+}
+// 单行省略
+.lineText-overflow{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// 通用操作按钮样式
+.operation img{
+  cursor: pointer;
+  position: relative;
+  top: 3px;
+  margin: 0 10px;
+}
+.operation span {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 1px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.defaultColor{
+  color:@colorB;
+}
+// 编辑颜色
+.editColor{
+  color: @colorB;
+}
+// 删除颜色
+.delColor{
+  color: @colorB;
+}
+// 查询右侧含有展开按钮
+.queryBtn{
+  display: flex;
+  align-items: center;
+}
+.min_line_query{
+  max-height: 40px;
+  overflow: hidden;
+}
+.max_line_query{
+  max-height: 200px;
+  overflow: hidden;
+}
+
+/* 全局样式 */
+.top {
+  overflow: hidden;
+  background: #fff;
+  border-radius: 3px;
+  // height: 64px;
+  padding: 13px;
+  }
+  .footer-btn {
+  padding: 0 10px 10px 0;
+  background: white;
+  }
+  .footer-btn .el-button.is-plain{
+    padding: 8px 20px;
+    background-color: transparent;
+    border-color: #4DA2FF;
+    color: #4DA2FF;
+  }
+  .footer-btn .el-form-item__content{
+    top: 5px;
+  }
+  .footer-btn .el-form-item{
+    margin-right: 20px !important;
+    margin-bottom: 0;
+  }
+  .pageClass {
+  float: right;
+  margin-top: .1rem
+  }
+  
+  .tableBackgroundDiv {
+    border-radius: 3px;
+    margin-top:15px;
+    padding: 15px;
+    padding-bottom: 0;
+    background: #fff;
+  }
+  .queryInput{
+    width: calc(100% - 70px);
+  }
+  
+  /* 弹窗样式 */
+  .wd30 > div {
+  width: 500px !important;
+  }
+  .wd375 > div {
+    width: 375px !important;
+    }
+  .wd400 > div {
+    width: 400px !important;
+    }
+  .wd500 > div {
+    width: 500px !important;
+    }
+  .wd550 > div {
+    width: 550px !important;
+    }
+  .wd600 > div {
+  width: 600px !important;
+  }
+  .wd620 > div {
+    width: 620px !important;
+    }
+    .wd650 > div {
+      width: 650px !important;
+      }
+  .wd690 > div {
+    width: 690px !important;
+    }
+  .wd800 > div {
+    width: 800px !important;
+  }
+  .wd860 > div {
+    width: 860px !important;
+  }
+  
+  .dialog-footer {
+  display: flex;
+  justify-content: center;
+  }
+  .add-btn, .cancel-btn {
+    width:77px;
+    height:28px;
+    color:#5A5E66;
+    background:rgba(255,255,255,1);
+    border-radius:4px;
+    border:1px solid rgba(220,223,230,1);
+  }
+  .dialog-footer .cancel-btn {
+    cursor: pointer;
+    border: 1px solid #D9D9D9;
+    color: #333;
+    padding: 0 !important;
+    margin-right: 0.3rem;
+  }
+  .add-btn-active, .success-btn {
+    width:77px;
+    height:28px;
+    color: white;
+    background:#749E25;
+    border-radius:4px;
+    border: 1px solid #749E25;
+    outline: none;
+    cursor: pointer;
+    padding: 0 !important;
+  }
+  .add-btn-active, .success-btn:active{
+    background-color:rgba(116,158,37, 0.8);
+    border-color: rgba(116,158,37, 0.8);
+  }
+  .tree_box{
+    width: 220px;
+    height: 100%;
+    padding: 10px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: white;
+  }
+  .table_box{
+    width: calc(100% - 240px);
+  }
+  .btn_gronp{
+    padding-bottom: 15px;
+  }
+.showTextQuery {
+    cursor: pointer;
+    padding-left: 10px;
+    line-height: 22px;
+    color: #749E25;
+    font-size: 14px;
+    img {
+        width: 10px;
+        height: 10px;
+    }
+}
+// 通过驳回待审核
+.await-color{
+  color: #FFA722;
+}
+.pass-color{
+  color: #749E25;
+}
+.refuse-color{
+  color: red;
+}
+.a-text{
+  color: #1890FF;
+  cursor: pointer;
+}
+  

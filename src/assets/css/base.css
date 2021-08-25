@@ -1,0 +1,81 @@
+body,dl,dd,ul,ol,h1,h2,h3,h4,h5,h6,p,form{margin:0}
+body,button,input,select,textarea{font:12px/1.5 sans-serif}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+em,b{font-style:normal}
+a{text-decoration:none;outline: none;}
+a:hover{text-decoration:none;outline: none;}
+a:focus{text-decoration:none;outline: none;}
+a:active{text-decoration:none;outline: none;}
+img{border:0}
+button,input,select,textarea{font-size:100%;outline:none}
+table{border-collapse:collapse;border-spacing:0}
+td,th,ul,ol{padding:0}
+.clearfix:after{
+  content: "020"; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;  
+}
+.form-title {
+  font-size: 18px;
+  font-family:MicrosoftYaHei;
+  font-weight:bold;
+  color:rgba(52,121,132,1);
+  margin-bottom: 10px
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px
+}
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track{
+    border-radius: 6px;
+    background-color: #F2F2F2;
+}
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb{
+    border-radius: 6px;
+    background-color: #749E25;
+}
+*{
+  box-sizing: border-box;
+}
+/*IE浏览器  定义滑块 内阴影+圆角*/
+body {
+  scrollbar-arrow-color: #749E25;
+  scrollbar-track-color: #fff;
+  scrollbar-base-color: #749E25;
+  scrollbar-base-color: #749E25;
+}
+/*IE浏览器  隐藏输入框右侧提示*/
+input::-ms-clear{display:none !important;}/*隐蔽文本框叉子*/
+input::-ms-reveal{display:none !important;}/*隐蔽暗码框小眼睛*/
+input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #999;
+}
+input[type=number] {
+  -moz-appearance:textfield;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #999;
+}
+
+input:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #999;
+}
+
+input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #999;
+}
+
